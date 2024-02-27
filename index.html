@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    
+    (async()=>{
+      const ports = await navigator.serial.getPorts();
+      if(ports.length > 0){
+        alert(`${ports.length} ports found`)
+      } else {
+        alert("No port found")
+      }
+    })()
+
+  </script>
+
+</body>
+</html>
